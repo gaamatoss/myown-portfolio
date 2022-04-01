@@ -1,0 +1,130 @@
+.header__bar {
+    width: 100%;
+    padding: 25px 35px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__button{
+    background-image: url(./../assets/icons/menu-icon.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.contact__button{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--preto);
+    font-weight: 300;
+    border: 1.5px solid #000000;
+    border-radius: 10px;
+}
+.menu__desktop {
+    display: none;
+}
+
+.menu__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    box-shadow: var(--shadow);
+    background-color: var(--background-color);
+}
+
+.menu__mobile li {
+    font-size: 1.4rem;
+    padding: 25px 0px;
+    border-bottom: 2px solid var(--preto);
+    text-align: center;
+}
+
+.main__content{
+    height: 80vh;
+}
+
+#home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.main__about {
+    text-align: center;
+}
+.about__header {
+    margin-top: 1.5rem;
+}
+
+.profile__picture {
+    width: 250px;
+    height: 250px;
+    /* margin-bottom: 2rem; */
+}
+
+.down__button {
+    background-image: url(./../assets/icons/arrowdown.svg);
+    width: 20px;
+    height: 40px;
+}
+
+#about {
+    height: 40vh;
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+}
+#about p {
+    font-size: 1.3rem;
+    line-height: 40px;
+}
+
+#projects {
+    text-align: center;
+}
+
+@media screen and (min-width: 720px){
+    .menu__mobile {
+        display: none;
+    }
+    .menu__button {
+        display: none;
+    }
+    .menu__desktop {
+        display: block;
+        width: 40%;
+        font-size: 1.5rem;
+    }
+    .menu__desktop ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+
+    .menu__desktop li:hover {
+        opacity: 60%;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .contact__button{
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        color: var(--preto);
+        font-weight: 300;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    }
+
+    .contact__button:hover{
+        background-color: var(--preto);
+        color: var(--branco);
+        transition: .5s;
+        box-shadow: var(--shadow);
+    }
+}
