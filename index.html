@@ -85,10 +85,19 @@
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body accordion-content">
+                <nav class="tech__list">
+                  <ul>
+                    <li>Javascript</li>
+                    <li>React.js</li>
+                    <li>Tensowflow.js</li>
+                  </ul>
+                  <a href="https://github.com/gaamatoss/LibrasDetection" target="_blank" class="visit__link">Visit</a>
+                </nav>
+                <div class="accordion__about">
+                  <iframe src="https://giphy.com/embed/5XFdr5L4B1MCAajCpN" width="100%" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                  <p>Website to help children with hearing impairment to become literate using an artificial intelligence capable of recognizing LIBRAS (Brazilian Sign Language) gestures.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -111,12 +120,18 @@
               aria-labelledby="flush-headingTwo"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                second item's accordion body. Let's imagine this being filled
-                with some actual content.
+            <div class="accordion-body">
+              <nav class="tech__list">
+                <ul>
+                  <li>Wordpress</li>
+                </ul>
+                <a href="https://panelaaberta.unifesp.br" target="_blank" class="visit__link">Visit</a>
+              </nav>
+              <div class="accordion__about">
+                <img src="./assets/img/panela_logo.png" alt="Logo do site Panela Aberta">
+                <p>Website made for a UNIFESP extension group in the nutrition course using wordpress.</p>
               </div>
+            </div>
             </div>
           </div>
           <div class="accordion-item">
@@ -138,49 +153,58 @@
               aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+            <div class="accordion-body">
+              <nav class="tech__list">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                </ul>
+                <a href="https://github.com/gaamatoss/stopsort" target="_blank" class="visit__link">Visit</a>
+              </nav>
+              <div class="accordion__about">
+                <img class="stopsort__img" src="./assets/img/stopSort.png" alt="Tela do jogo stopsort">
+                <p>Stopsort is a website that generate random letters to play STOP (Traditional Brazilian Game).</p>
               </div>
+            </div>
             </div>
           </div>
         </div>
       </section>
       <section id="contact" class="container">
         <h1>Contact</h1>
-        <div class="contact__social">
-          <h2>You can find me here:</h2>
-          <ul>
-            <li>
-              <a href="#" class="github"
-                ><img src="./../assets/icons/github-brands.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="instagram"
-                ><img src="./../assets/icons/instagram-brands.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="linkedin"
-                ><img src="./../assets/icons/linkedin-brands.svg" alt=""
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="contact__divider" />
-        <div class="contact__form">
-          <form action="">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="E-mail" />
-            <input type="text" placeholder="Message" />
-            <button type="submit">Send</button>
+        <div class="contact__content">
+          <div class="contact__social">
+            <h2>You can find me here:</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/gaamatoss" target="_blank" class="github"
+                  ><img src="./../assets/icons/github-brands.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/gaamatoss/" target="_blank" class="instagram"
+                  ><img src="./../assets/icons/instagram-brands.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/gaamatoss/" target="_blank" class="linkedin"
+                  ><img src="./../assets/icons/linkedin-brands.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <h2>or</h2>
+          <div class="contact__form">
+            <h2>Message me:</h2>
+            <form action="">
+              <input type="text" id="name" placeholder="Name" />
+              <input type="text" id="email" placeholder="E-mail" />
+              <input type="text" id="message" placeholder="Message" />
+              <button type="submit" id="sendButton">Send</button>
+            </form>
             <span class="submit__message"></span>
-          </form>
+          </div>
         </div>
       </section>
     </main>
